@@ -76,6 +76,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
 }
 
 header h1 {
@@ -91,6 +92,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 section {
     padding-top: 30px;
@@ -109,7 +111,9 @@ p {
     padding-top: 20px;
     text-align: center;
 }
-
+#menu{
+    background-color: #f4f4f4;
+}
 .menu-box{
     height: auto;
     display: flex;
@@ -121,7 +125,7 @@ p {
     font-weight: 300;
 }
 .menu-item{
-    width: 20vw;
+    width: 20%;
     padding: 20px;
     height: auto;
     display: flex;
@@ -155,6 +159,42 @@ p {
 
 footer{
     height: 80px;
-    background-color: #227a76;
+    background: linear-gradient(45deg, rgba(136, 183, 222, 0.3), rgb(136, 183, 222));
     color: white;
+}
+
+@media(max-width: 1090px){
+    .menu-item{
+        width: 33%;
+    }
+}
+@media(max-width: 774px){
+    .menu-item{
+        width: 50%;
+    }
+}
+@media(max-width: 405px){
+    nav{
+        flex-direction: column;
+        height: auto;
+    }
+    .left-nav-box i{
+        font-size: 22px;
+    }
+    .right-nav-box{
+        width: 100%;
+    }
+    .hero-text-box h1{
+        text-align: center;
+        font-size: 32px;
+    }
+    .menu-item{
+        width: fit-content;
+    }
+}
+
+@media(max-width: 376px){
+    .hero-text-box h1{
+        text-align: center;
+    }
 }
