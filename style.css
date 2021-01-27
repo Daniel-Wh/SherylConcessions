@@ -167,6 +167,22 @@ footer{
     height: 80px;
     background: linear-gradient(45deg, rgba(136, 183, 222, 0.3), rgb(136, 183, 222));
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.left-footer {
+    width: fit-content;
+}
+.left-footer a {
+    padding: 0 30px;
+    text-decoration: none;
+    
+    color: #22527a;
+}
+.left-footer a i{
+    font-size: 28px;
 }
 
 @media(max-width: 1090px){
@@ -178,6 +194,16 @@ footer{
     .menu-item{
         width: 50%;
     }
+}
+@media(max-width: 882px){
+    nav{
+        flex-direction: column;
+        height: auto;
+    }
+    .right-nav-box{
+        width: 100%;
+    }
+
 }
 @media(max-width: 405px){
     nav{
