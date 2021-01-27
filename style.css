@@ -45,6 +45,54 @@ nav ul {
 nav ul li{
     cursor: pointer;
     font-size: 20px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
 
 }
 
+nav ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/header-background.webp);
+    height: 80vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    position: relative;
+    font-size: 44px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    border-bottom: solid 2px black;
+}
+p {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: center;
+}
