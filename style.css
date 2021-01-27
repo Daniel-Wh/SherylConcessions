@@ -15,19 +15,27 @@ html {
 }
 
 nav {
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
     height: 60px;
-    background-color: #5fa1cf;
+    background-color: #22527a;
     color: white;
 }
 .left-nav-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 50%;
-    flex: 1;
-    position: relative;
-    left: 40px;
+}
+.left-nav-box i{
+    font-size: 26px;
+}
+.left-nav-box img{
+    width: auto;
+    height: 60px;
+    padding-right: 40px;
 }
 .right-nav-box{
     width: 40%;
@@ -95,4 +103,44 @@ p {
     font-size: 22px;
     padding-top: 20px;
     text-align: center;
+}
+
+.menu-box{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.menu-box h3 {
+    font-size: 26px;
+    font-weight: 300;
+}
+.menu-item{
+    width: 20vw;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item p{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+.menu-description{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.drinks-box h2{
+    padding-top: 40px;
+    text-align: center;
+}
+.drinks-box p{
+    padding: 5px;
+    font-size: 24px;
 }
