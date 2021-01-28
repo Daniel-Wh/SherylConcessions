@@ -29,14 +29,19 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    height: 30px;
     width: 50%;
+}
+.left-nav-box a{
+    text-decoration: none;
+    color: white;
 }
 .left-nav-box i{
     font-size: 26px;
 }
 .left-nav-box img{
     width: auto;
-    height: 60px;
+    height: 120px;
     padding-right: 40px;
 }
 .right-nav-box{
@@ -89,6 +94,19 @@ header h1 {
     text-transform: uppercase;
 }
 
+.hero-text-box{
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text-box img{
+    filter: hue-rotate(5deg) saturate(1000%) drop-shadow(1px 2px 8px #cde5f8);
+    max-height: 100%;
+    max-width: 100%;
+
+}
 .about {
     display: flex;
     flex-direction: column;
@@ -155,7 +173,7 @@ p {
 }
 .drinks{
     width: 100%;
-    padding: 5px;
+
 }
 .drinks p {
     font-size: 22px;
@@ -203,6 +221,15 @@ footer{
     .right-nav-box{
         width: 100%;
     }
+    .left-nav-box i{
+        font-size: 22px;
+
+    }
+    .left-nav-box{
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
 
 }
 @media(max-width: 405px){
@@ -211,9 +238,7 @@ footer{
         height: auto;
         width: 100%;
     }
-    .left-nav-box i{
-        font-size: 22px;
-    }
+
     .right-nav-box{
         width: 100%;
     }
@@ -222,7 +247,7 @@ footer{
         font-size: 32px;
     }
     .menu-item{
-        width: fit-content;
+        width: 80%;
     }
 }
 
